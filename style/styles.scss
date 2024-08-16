@@ -1,0 +1,243 @@
+//sass styles.scss styles.css
+$base-color: #EEF5FF;
+$primary-color: #86B6F6;
+$secondary-color: #B4D4FF;
+$font-color: #176B87;
+
+html {
+    font-family: 'Arial', sans-serif;
+    background-color: $base-color;
+    color: $font-color;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    @media (min-width: 768px) {
+
+        body {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100vh;
+            margin: 0;
+
+            .mobile {
+                display: none;
+            }
+
+            header {
+                background-color: $secondary-color;
+                border-bottom: 0.5px solid $primary-color;
+                height: calc(100vh / 13);
+                margin: 0;
+                display: flex;
+
+                .title {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    width: calc(100vw / (1280/((72 * 4) + (32 * 5))));
+                    margin: 0;
+
+                    h2 {
+                        margin: 0;
+                        padding-left: calc(100vw / (1280 / 32));
+                    }
+                }
+
+                nav {
+                    height: 100%;
+                    width: calc(100vw / (1280/((72 * 8) + (32 * 7))));
+                    margin: 0;
+                    padding-right: calc(100vw / (1280 / 32));
+
+                    ul {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        height: 100%;
+                        margin: 0;
+                        padding: 0;
+                        list-style-type: none;
+
+                        li {
+                            display: flex;
+                            justify-content: center;
+                            width: calc(100vw / (1280/((72 + (32 * 2)))));
+                            margin: 0;
+                            padding: 0;
+
+                            a:hover,
+                            a:visited,
+                            a:link,
+                            a:active {
+                                text-decoration: none;
+                                color: inherit;
+                            }
+                        }
+                    }
+                }
+            }
+
+            main {
+                display: flex;
+
+                aside {
+                    height: calc(100vh - (100vh / 13));
+                    width: calc(100vw / (1280/((72 * 4) + (32 * 5))));
+
+                    .image {
+                        height: calc(100vh / 13) * 6;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            max-width: 85%;
+                            height: 85%;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .bio {
+                        height: calc(100vh / 13) * 4;
+                        display: flex;
+                        align-items: center;
+
+                        .bio-content {
+                            font-style: italic;
+                            padding: 0 calc(100vw / (1280 / 32));
+                        }
+                    }
+
+                    .info {
+                        height: calc(100vh / 13) * 2;
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: center;
+
+                        .link {
+                            display: flex;
+                            width: calc(100vw / (1280/((72 + (32 * 2)))));
+                            height: calc(100vh / 13);
+
+                            a img {
+                                width: 75%;
+                                height: 75%;
+                            }
+                        }
+                    }
+                }
+
+                .main-content {
+                    width: calc(100vw / (1280/((72 * 8) + (32 * 8))));
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        body {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            background-color: $base-color;
+
+            .browser {
+                display: none;
+            }
+
+            header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $secondary-color;
+                border-bottom: 0.5px solid $primary-color;
+                height: calc(100vh / 16);
+
+                h2 {
+                    margin: 0;
+                }
+            }
+
+            main {
+                height: calc((100vh / 16) * 10);
+
+                .top {
+                    height: calc((100vh / 16) * 6);
+
+                    .image {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: calc((100vh / 16) * 3);
+
+                        img {
+                            max-width: 75%;
+                            height: 75%;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .bio {
+                        height: calc((100vh / 16) * 3);
+                        
+                        .bio-content {
+                            font-style: italic;
+                            padding: calc(100vw / 25);        
+                        }
+                    }
+                }
+
+                .bottom {
+                    height: calc((100vh / 16) * 8);
+                }
+            }
+
+            .footer {
+                height: calc(100vh / 16);
+
+
+                nav {
+                    height: 100%;
+                    margin: 0;
+                    background-color: $secondary-color;
+                    border-top: 0.5px solid $primary-color;
+
+                    ul {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        height: 100%;
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
+                        list-style-type: none;
+
+                        li {
+                            display: flex;
+                            justify-content: center;
+                            width: calc((100vw / 25) * 6);
+                            margin: 0;
+                            padding: 0;
+
+                            a:hover,
+                            a:visited,
+                            a:link,
+                            a:active {
+                                text-decoration: none;
+                                color: inherit;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

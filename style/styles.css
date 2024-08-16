@@ -1,0 +1,201 @@
+html {
+  font-family: "Arial", sans-serif;
+  background-color: #EEF5FF;
+  color: #176B87;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  html body {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    margin: 0;
+  }
+  html body .mobile {
+    display: none;
+  }
+  html body header {
+    background-color: #B4D4FF;
+    border-bottom: 0.5px solid #86B6F6;
+    height: 7.6923076923vh;
+    margin: 0;
+    display: flex;
+  }
+  html body header .title {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 35vw;
+    margin: 0;
+  }
+  html body header .title h2 {
+    margin: 0;
+    padding-left: 2.5vw;
+  }
+  html body header nav {
+    height: 100%;
+    width: 62.5vw;
+    margin: 0;
+    padding-right: 2.5vw;
+  }
+  html body header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  html body header nav ul li {
+    display: flex;
+    justify-content: center;
+    width: 10.625vw;
+    margin: 0;
+    padding: 0;
+  }
+  html body header nav ul li a:hover,
+  html body header nav ul li a:visited,
+  html body header nav ul li a:link,
+  html body header nav ul li a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+  html body main {
+    display: flex;
+  }
+  html body main aside {
+    height: 92.3076923077vh;
+    width: 35vw;
+  }
+  html body main aside .image {
+    height: 46.1538461538vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html body main aside .image img {
+    max-width: 85%;
+    height: 85%;
+    border-radius: 50%;
+  }
+  html body main aside .bio {
+    height: 30.7692307692vh;
+    display: flex;
+    align-items: center;
+  }
+  html body main aside .bio .bio-content {
+    font-style: italic;
+    padding: 0 2.5vw;
+  }
+  html body main aside .info {
+    height: 15.3846153846vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  html body main aside .info .link {
+    display: flex;
+    width: 10.625vw;
+    height: 7.6923076923vh;
+  }
+  html body main aside .info .link a img {
+    width: 75%;
+    height: 75%;
+  }
+  html body main .main-content {
+    width: 65vw;
+  }
+}
+@media (max-width: 768px) {
+  html body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background-color: #EEF5FF;
+  }
+  html body .browser {
+    display: none;
+  }
+  html body header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B4D4FF;
+    border-bottom: 0.5px solid #86B6F6;
+    height: 6.25vh;
+  }
+  html body header h2 {
+    margin: 0;
+  }
+  html body main {
+    height: 62.5vh;
+  }
+  html body main .top {
+    height: 37.5vh;
+  }
+  html body main .top .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18.75vh;
+  }
+  html body main .top .image img {
+    max-width: 75%;
+    height: 75%;
+    border-radius: 50%;
+  }
+  html body main .top .bio {
+    height: 18.75vh;
+  }
+  html body main .top .bio .bio-content {
+    font-style: italic;
+    padding: 4vw;
+  }
+  html body main .bottom {
+    height: 50vh;
+  }
+  html body .footer {
+    height: 6.25vh;
+  }
+  html body .footer nav {
+    height: 100%;
+    margin: 0;
+    background-color: #B4D4FF;
+    border-top: 0.5px solid #86B6F6;
+  }
+  html body .footer nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  html body .footer nav ul li {
+    display: flex;
+    justify-content: center;
+    width: 24vw;
+    margin: 0;
+    padding: 0;
+  }
+  html body .footer nav ul li a:hover,
+  html body .footer nav ul li a:visited,
+  html body .footer nav ul li a:link,
+  html body .footer nav ul li a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

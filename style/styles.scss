@@ -135,6 +135,102 @@ html {
 
                 .main-content {
                     width: calc(100vw / (1280/((72 * 8) + (32 * 8))));
+                    display: flex;
+                    flex-direction: column;
+                    padding: calc(100vw / (1280/32));
+
+                    .content-section {
+                        display: flex;
+                        width: calc(100vw / (1280/((72 * 8) + (32 * 6))));
+                        height: calc((100vh / 13) * 2);
+                        margin-bottom: calc((100vh / 13) * 0.75);
+                        align-items: center;
+
+                        a:hover,
+                        a:visited,
+                        a:link,
+                        a:active {
+                            text-decoration: none;
+                            color: inherit;
+                        }
+
+                        .content-box {
+                            height: 100%;
+                            width: calc(100vw / (1280/(((72 * 2) + 32))));
+
+                            .content-title {
+                                height: calc((100vh / 13) / 2);
+                                font-weight: bold;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            .content-image {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                img {
+                                    height: 100%;
+                                    width: 100%;
+                                    border: 0.05em solid $font-color;
+                                }
+
+                                .small-img {
+                                    height: 50%;
+                                    width: 50%;
+                                    border: none;
+                                }
+                            }
+                        }
+
+                        .content-description {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0 calc(100vw / (1280/32));
+                        }
+
+                        .skills {
+                            align-items: end;
+                        }
+                    }
+
+                    .contact-form {
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: calc(100vw / (1280/((72 * 2) + (32 * 3))));
+
+                        form {
+                            display: flex;
+                            flex-direction: column;
+                            width: calc(100vw / (1280/(((72 * 3) + (32 * 2)))));
+
+                            label {
+                                height: calc((100vh / 13) / 2);
+                                padding-left: calc(100vw / (1280/16));
+                                margin-top: calc((100vh / 13) / 2);
+                                background-color: $secondary-color;
+                                align-content: center;
+                            }
+
+                            textarea {
+                                height: calc((100vh / 13) * 2);
+                                resize: none;
+                            }
+
+                            button {
+                                width: calc(100vw / (1280/(((72 * 2) + (32)))));
+                                height: calc(100vh / 13);
+                                margin-top: calc((100vh / 13) / 2);
+                                align-self: center;
+                                background-color: $primary-color;
+                                border: none;
+                                color: white;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -187,16 +283,164 @@ html {
 
                     .bio {
                         height: calc((100vh / 16) * 3);
-                        
+
                         .bio-content {
                             font-style: italic;
-                            padding: calc(100vw / 25);        
+                            padding: calc(100vw / 25);
                         }
                     }
                 }
 
                 .bottom {
                     height: calc((100vh / 16) * 8);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .content-section {
+                        display: flex;
+                        width: calc(100vw - ((100vh / 25) * 2));
+                        height: calc((100vh / 16) * 2);
+
+                        a:hover,
+                        a:visited,
+                        a:link,
+                        a:active {
+                            text-decoration: none;
+                            color: inherit;
+                        }
+
+                        .content-box-sx {
+                            height: 100%;
+                            width: calc((100vw / 25) * 10);
+
+                            .content-image {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+
+                                img {
+                                    height: 100%;
+                                    width: 100%;
+                                    border: 0.05em solid $font-color;
+                                }
+
+                                .small-img {
+                                    height: 50%;
+                                    width: 50%;
+                                    border: none;
+                                }
+                            }
+                        }
+
+                        .content-box-dx {
+                            width: calc((100vw / 25) * 13);
+                            padding: 0 calc(100vw / (1280/32));
+
+                            .content-title {
+                                height: calc((100vh / 16) * 0.5);
+                                width: 100%;
+                                font-weight: bold;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                            }
+
+                            .content-description {
+                                height: calc((100vh / 16) * 1.5);
+                                width: 100%;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: flex-start;
+                            }
+                        }
+                    }
+
+                    .skill-section {
+                        display: flex;
+                        height: calc((100vh / 16) * 1.5);
+                        width: calc(100vw - ((100vw / 25) * 2));
+                        margin-bottom: calc((100vh / 16) / 2);
+                        align-items: center;
+                        justify-content: center;
+
+                        .skill-sx {
+                            width: calc((100vw / 25) * 8);
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            .skill-title {
+                                height: calc((100vh / 16) * 0.5);
+                            }
+
+                            .skill-image img {
+                                height: calc(100vh / 16);
+                                width: 100%;
+                            }
+                        }
+
+                        .skill-dx {
+                            width: calc((100vw / 25) * 15.5);
+                            padding-left: calc((100vw / 25) * 0.5);
+                            height: 100%;
+                            align-content: center;
+
+                            ul {
+                                margin: 0;
+                                padding: 0;
+                            }
+                        }
+                    }
+
+                    .contact-form {
+                        display: flex;
+                        flex-direction: column;
+                        width: calc(100vw);
+
+                        strong {
+                            margin-left: calc(100vw / 25);
+                        }
+
+                        form {
+                            display: flex;
+                            flex-direction: column;
+                            width: calc(100vw);
+
+                            label {
+                                margin: 0 calc(100vw / 25);
+                                padding-left: calc(100vw / 25);
+                                margin-top: calc((100vh / 16) / 4);
+                                background-color: $secondary-color;
+                                align-content: center;
+                            }
+
+                            input,
+                            textarea {
+                                margin: 0 calc(100vw / 25);
+                                padding: calc(100vw / 50);
+                                font-size: calc(100vw / 30);
+                            }
+
+                            textarea {
+                                height: calc((100vh / 16) * 2);
+                                resize: none;
+                            }
+
+                            button {
+                                margin-top: calc((100vh / 16) / 2);
+                                padding: calc(100vw / 50);
+                                background-color: $primary-color;
+                                border: none;
+                                color: white;
+                                font-size: calc(100vw / 30);
+                                align-self: center;
+                                width: calc((100vw / 25) * 7);
+                            }
+                        }
+                    }
                 }
             }
 

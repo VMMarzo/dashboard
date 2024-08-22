@@ -112,6 +112,88 @@ html {
   }
   html body main .main-content {
     width: 65vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5vw;
+  }
+  html body main .main-content .content-section {
+    display: flex;
+    width: 60vw;
+    height: 15.3846153846vh;
+    margin-bottom: 5.7692307692vh;
+    align-items: center;
+  }
+  html body main .main-content .content-section a:hover,
+  html body main .main-content .content-section a:visited,
+  html body main .main-content .content-section a:link,
+  html body main .main-content .content-section a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+  html body main .main-content .content-section .content-box {
+    height: 100%;
+    width: 13.75vw;
+  }
+  html body main .main-content .content-section .content-box .content-title {
+    height: 3.8461538462vh;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html body main .main-content .content-section .content-box .content-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html body main .main-content .content-section .content-box .content-image img {
+    height: 100%;
+    width: 100%;
+    border: 0.05em solid #176B87;
+  }
+  html body main .main-content .content-section .content-box .content-image .small-img {
+    height: 50%;
+    width: 50%;
+    border: none;
+  }
+  html body main .main-content .content-section .content-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.5vw;
+  }
+  html body main .main-content .content-section .skills {
+    align-items: end;
+  }
+  html body main .main-content .contact-form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 18.75vw;
+  }
+  html body main .main-content .contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 21.875vw;
+  }
+  html body main .main-content .contact-form form label {
+    height: 3.8461538462vh;
+    padding-left: 1.25vw;
+    margin-top: 3.8461538462vh;
+    background-color: #B4D4FF;
+    align-content: center;
+  }
+  html body main .main-content .contact-form form textarea {
+    height: 15.3846153846vh;
+    resize: none;
+  }
+  html body main .main-content .contact-form form button {
+    width: 13.75vw;
+    height: 7.6923076923vh;
+    margin-top: 3.8461538462vh;
+    align-self: center;
+    background-color: #86B6F6;
+    border: none;
+    color: white;
   }
 }
 @media (max-width: 768px) {
@@ -162,6 +244,132 @@ html {
   }
   html body main .bottom {
     height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  html body main .bottom .content-section {
+    display: flex;
+    width: calc(100vw - 8vh);
+    height: 12.5vh;
+  }
+  html body main .bottom .content-section a:hover,
+  html body main .bottom .content-section a:visited,
+  html body main .bottom .content-section a:link,
+  html body main .bottom .content-section a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+  html body main .bottom .content-section .content-box-sx {
+    height: 100%;
+    width: 40vw;
+  }
+  html body main .bottom .content-section .content-box-sx .content-image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  html body main .bottom .content-section .content-box-sx .content-image img {
+    height: 100%;
+    width: 100%;
+    border: 0.05em solid #176B87;
+  }
+  html body main .bottom .content-section .content-box-sx .content-image .small-img {
+    height: 50%;
+    width: 50%;
+    border: none;
+  }
+  html body main .bottom .content-section .content-box-dx {
+    width: 52vw;
+    padding: 0 2.5vw;
+  }
+  html body main .bottom .content-section .content-box-dx .content-title {
+    height: 3.125vh;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  html body main .bottom .content-section .content-box-dx .content-description {
+    height: 9.375vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  html body main .bottom .skill-section {
+    display: flex;
+    height: 9.375vh;
+    width: 92vw;
+    margin-bottom: 3.125vh;
+    align-items: center;
+    justify-content: center;
+  }
+  html body main .bottom .skill-section .skill-sx {
+    width: 32vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  html body main .bottom .skill-section .skill-sx .skill-title {
+    height: 3.125vh;
+  }
+  html body main .bottom .skill-section .skill-sx .skill-image img {
+    height: 6.25vh;
+    width: 100%;
+  }
+  html body main .bottom .skill-section .skill-dx {
+    width: 62vw;
+    padding-left: 2vw;
+    height: 100%;
+    align-content: center;
+  }
+  html body main .bottom .skill-section .skill-dx ul {
+    margin: 0;
+    padding: 0;
+  }
+  html body main .bottom .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  html body main .bottom .contact-form strong {
+    margin-left: 4vw;
+  }
+  html body main .bottom .contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  html body main .bottom .contact-form form label {
+    margin: 0 4vw;
+    padding-left: 4vw;
+    margin-top: 1.5625vh;
+    background-color: #B4D4FF;
+    align-content: center;
+  }
+  html body main .bottom .contact-form form input,
+  html body main .bottom .contact-form form textarea {
+    margin: 0 4vw;
+    padding: 2vw;
+    font-size: 3.3333333333vw;
+  }
+  html body main .bottom .contact-form form textarea {
+    height: 12.5vh;
+    resize: none;
+  }
+  html body main .bottom .contact-form form button {
+    margin-top: 3.125vh;
+    padding: 2vw;
+    background-color: #86B6F6;
+    border: none;
+    color: white;
+    font-size: 3.3333333333vw;
+    align-self: center;
+    width: 28vw;
   }
   html body .footer {
     height: 6.25vh;

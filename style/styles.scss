@@ -231,6 +231,81 @@ html {
                             }
                         }
                     }
+
+                    * {
+                        box-sizing: border-box;
+                    }
+
+                    .timeline {
+                        position: relative;
+                        width: 100%;
+                        margin: 0 auto;
+
+                        article {
+                            position: relative;
+                            background: $secondary-color;
+                            width: calc(50% - 40px);
+                            padding: 5px;
+
+                            h5, h3, p {
+                                margin: 0;
+                            }
+                        }
+
+                        article:before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            left: calc(100% + 26px);
+                            background: $primary-color;
+                            width: 24px;
+                            height: 24px;
+                            border: 6px $secondary-color solid;
+                            border-radius: 50%;
+                            z-index: 2;
+                        }
+
+                        article:after {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 100%;
+                            width: 0;
+                            height: 0;
+                            border-top: 20px solid transparent;
+                            border-left: 16px solid $secondary-color;
+                            border-bottom: 20px solid transparent;
+                        }
+
+                        article:nth-child(even) {
+                            margin-left: calc(50% + 48px);
+                        }
+
+                        article:nth-child(even):before {
+                            left: auto;
+                            right: calc(100% + 26px);
+                        }
+
+                        article:nth-child(even):after {
+                            left: auto;
+                            right: 100%;
+                            border-left: none;
+                            border-right: 16px solid $secondary-color;
+                        }
+                    }
+
+                    .timeline:after {
+                        content: "";
+                        position: absolute;
+                        top: 20px;
+                        bottom: 20px;
+                        left: 50%;
+                        width: 8px;
+                        background: $secondary-color;
+                        border-radius: 3px;
+                        z-index: 1;
+                    }
                 }
             }
         }
@@ -441,6 +516,81 @@ html {
                             }
                         }
                     }
+
+                    .timeline {
+                        position: relative;
+                        width: 100%;
+                        margin: 0 auto;
+
+                        article {
+                            position: relative;
+                            background: $secondary-color;
+                            width: calc(50% - 40px);
+                            padding: 5px;
+
+                            h5, h3, p {
+                                margin: 0;
+                            }
+                        }
+
+                        article:before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            left: calc(100% + 26px);
+                            background: $primary-color;
+                            width: 24px;
+                            height: 24px;
+                            border: 6px $secondary-color solid;
+                            border-radius: 50%;
+                            z-index: 2;
+                        }
+
+                        article:after {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 100%;
+                            width: 0;
+                            height: 0;
+                            border-top: 20px solid transparent;
+                            border-left: 16px solid $secondary-color;
+                            border-bottom: 20px solid transparent;
+                        }
+
+                        article:nth-child(even) {
+                            margin-left: calc(50% + 48px);
+                        }
+
+                        article:nth-child(even):before {
+                            left: auto;
+                            right: calc(100% + 26px);
+                        }
+
+                        article:nth-child(even):after {
+                            left: auto;
+                            right: 100%;
+                            border-left: none;
+                            border-right: 16px solid $secondary-color;
+                        }
+                    }
+
+                    .timeline:after {
+                        content: "";
+                        position: absolute;
+                        top: 20px;
+                        bottom: 20px;
+                        left: 50%;
+                        width: 8px;
+                        background: $secondary-color;
+                        border-radius: 3px;
+                        z-index: 1;
+                    }
+                }
+
+                .scrollable {
+                    overflow-y: auto;
                 }
             }
 

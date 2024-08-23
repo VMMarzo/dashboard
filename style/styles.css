@@ -195,6 +195,71 @@ html {
     border: none;
     color: white;
   }
+  html body main .main-content * {
+    box-sizing: border-box;
+  }
+  html body main .main-content .timeline {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+  html body main .main-content .timeline article {
+    position: relative;
+    background: #B4D4FF;
+    width: calc(50% - 40px);
+    padding: 5px;
+  }
+  html body main .main-content .timeline article h5, html body main .main-content .timeline article h3, html body main .main-content .timeline article p {
+    margin: 0;
+  }
+  html body main .main-content .timeline article:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 26px);
+    background: #86B6F6;
+    width: 24px;
+    height: 24px;
+    border: 6px #B4D4FF solid;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  html body main .main-content .timeline article:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 16px solid #B4D4FF;
+    border-bottom: 20px solid transparent;
+  }
+  html body main .main-content .timeline article:nth-child(even) {
+    margin-left: calc(50% + 48px);
+  }
+  html body main .main-content .timeline article:nth-child(even):before {
+    left: auto;
+    right: calc(100% + 26px);
+  }
+  html body main .main-content .timeline article:nth-child(even):after {
+    left: auto;
+    right: 100%;
+    border-left: none;
+    border-right: 16px solid #B4D4FF;
+  }
+  html body main .main-content .timeline:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 50%;
+    width: 8px;
+    background: #B4D4FF;
+    border-radius: 3px;
+    z-index: 1;
+  }
 }
 @media (max-width: 768px) {
   html body {
@@ -370,6 +435,71 @@ html {
     font-size: 3.3333333333vw;
     align-self: center;
     width: 28vw;
+  }
+  html body main .bottom .timeline {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+  html body main .bottom .timeline article {
+    position: relative;
+    background: #B4D4FF;
+    width: calc(50% - 40px);
+    padding: 5px;
+  }
+  html body main .bottom .timeline article h5, html body main .bottom .timeline article h3, html body main .bottom .timeline article p {
+    margin: 0;
+  }
+  html body main .bottom .timeline article:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 26px);
+    background: #86B6F6;
+    width: 24px;
+    height: 24px;
+    border: 6px #B4D4FF solid;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  html body main .bottom .timeline article:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 16px solid #B4D4FF;
+    border-bottom: 20px solid transparent;
+  }
+  html body main .bottom .timeline article:nth-child(even) {
+    margin-left: calc(50% + 48px);
+  }
+  html body main .bottom .timeline article:nth-child(even):before {
+    left: auto;
+    right: calc(100% + 26px);
+  }
+  html body main .bottom .timeline article:nth-child(even):after {
+    left: auto;
+    right: 100%;
+    border-left: none;
+    border-right: 16px solid #B4D4FF;
+  }
+  html body main .bottom .timeline:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 50%;
+    width: 8px;
+    background: #B4D4FF;
+    border-radius: 3px;
+    z-index: 1;
+  }
+  html body main .scrollable {
+    overflow-y: auto;
   }
   html body .footer {
     height: 6.25vh;
